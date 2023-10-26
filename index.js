@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.get("/", (req, res) => {
   // res.send([{ fn: "Sola", ln: "Kunle" }]);
-  res.sendFile()
+  res.sendFile(__dirname+"/index.html")
 });
 app.get("/about", (req, res) => {
   res.send("No error");
