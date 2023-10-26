@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 app.get("/", (req, res) => {
-  res.send([{ fn: "Sola", ln: "Kunle" }]);
+  // res.send([{ fn: "Sola", ln: "Kunle" }]);
+  res.sendFile()
 });
 app.get("/about", (req, res) => {
   res.send("No error");
