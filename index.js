@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const ejs = require("ejs");
+app.use(express.urlencoded({extended:true}))
+let allstudents = []
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   // res.send([{ fn: "Sola", ln: "Kunle" }]);
@@ -21,6 +23,11 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+app.post("/register",(req,res)=>{
+  res.send("Wow")
+  allstudents.push(req.body)
+  console.log(req.body);
+})
 app.listen(5000, (err) => {
   if (err) {
     console.log("Something went wrong");
