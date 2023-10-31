@@ -7,6 +7,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   // res.send([{ fn: "Sola", ln: "Kunle" }]);
   // res.sendFile(__dirname+"/index.html")
+ 
   res.render("index", {
     myName: "Kun",
     allstudents: [
