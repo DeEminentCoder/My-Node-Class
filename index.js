@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
     allstudents: [
       { firstname: "Kun", lastname: "Saade" },
       { firstname: "Tola", lastname: "wayne" },
-      { firstname: "Tom", lastname: "Vict" },
+      { firstname: "Tom", lastname: "Vic" },
     ],
   });
 });
