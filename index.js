@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   // res.sendFile(__dirname+"/index.html")
  
   res.render("index", {
-    myName: "Kun",
+    myName: "Ku",
     allstudents: [
       { firstname: "Kun", lastname: "Saade" },
       { firstname: "Tola", lastname: "wayne" },
