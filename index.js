@@ -5,7 +5,7 @@ app.use(express.urlencoded({extended:true}))
 let allstudents = []
 app.set("view engine", "ejs");
 app.get("/", (req, res) => {
-  // res.send([{ fn: "Sola", ln: "Kunle" }]);
+  // res.send([{ fn: "Soa", ln: "Kunle" }]);
   // res.sendFile(__dirname+"/index.html")
  
   res.render("index", {
