@@ -11,7 +11,8 @@ app.get("/", (req, res) => {
   res.render("index", {
     myName: "Kun",
     allstudents: [
-      { firstname: "Kun", lastname: "Saade" },
+      { firstname: "Kun", lastname: "Saa,
+      de" },
       { firstname: "Tola", lastname: "wayne" },
       { firstname: "Tom", lastname: "Vic" },
     ],
